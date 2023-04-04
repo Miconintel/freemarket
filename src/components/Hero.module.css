@@ -1,0 +1,45 @@
+.section {
+  background-image: url("./../../public/Untitled-1.jpg");
+  background-size: cover;
+  margin: 0;
+  height: 90vh;
+  display: grid;
+  grid-template-columns:
+    [start] minmax(6rem, 1fr) [container-start] repeat(
+      4,
+      [mini-cont] minmax(4rem, 14rem) [mini-end]
+    )
+    repeat(4, [mini-mid] 14rem [min-midend])
+    [container-end] minmax(6rem, 1fr)
+    [end];
+  align-items: center;
+  /* this grid allows for flexibility on the right side  and rigidity on the lefr
+  the right flexibility stops at 6 rem
+  */
+}
+
+.container {
+  grid-column: mini-mid 1 / container-end;
+  display: grid;
+  margin: 0;
+  /* this margin here is to cancel the margin auto in other containers */
+}
+
+.section h1 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #f5f5f5;
+  margin-bottom: 6.4rem;
+  float: right;
+  line-height: 1.4;
+}
+
+.section .outline {
+  background-color: transparent;
+  border: 2px solid #f5f5f5;
+  color: #f5f5f5;
+  box-shadow: 0.2rem 0.2rem 0.8rem 0rem rgba(0, 0, 0, 0.223);
+  margin-left: 2.4rem;
+}

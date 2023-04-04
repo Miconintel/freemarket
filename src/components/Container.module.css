@@ -1,0 +1,6 @@
+.container {
+  max-width: 120rem;
+  /* this can work because it is max width, so it can take a lowe width but wont 
+  exceed 120rem */
+  /* margin: 0 auto; */
+}
